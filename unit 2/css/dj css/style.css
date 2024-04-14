@@ -1,0 +1,47 @@
+.grid {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 250px);
+    height: 100vh;
+    grid-gap: 20px;
+    display: grid;
+    justify-content: center;
+    margin-top: 90px;
+    
+}
+
+.square {
+    background-color: #ccc;
+
+}
+
+
+.square1:hover {
+    background: red; 
+    transform: rotate(180deg);
+}
+
+.square2:hover {
+    background: blue;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.square3:hover {
+    background: green;
+    border-radius: 50%;
+    transform: scale(1.2); 
+}
+
+.square4:hover {
+    background: pink;
+    padding: 20px;
+} 
+
+.square5:hover {
+    background: orange;
+    margin: 20px;
+}
+
+.square6:hover {
+    background: purple;
+    opacity: 0.5;
+}

@@ -1,0 +1,135 @@
+*{
+        @media(max-width: 768px){
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: 100%;
+        }
+}
+.box{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1f ;
+        border: 40px solid white
+
+
+}
+
+
+
+.box1{
+        border:10px solid white;
+        height: 200px;
+        grid-column-start: span 4;
+        background-color: #F5C6D6;
+                @media(max-width: 768px){
+                        grid-column: 1/5;
+                }
+}
+
+
+
+
+.box2{
+        border:10px solid white;
+        grid-column-start: span 1 ;
+        height: 200px;
+        background-color: #EE2E84;
+                @media(max-width: 768px){
+                        grid-column: 1/5;        
+                }
+}
+
+
+
+
+.box3{
+        border:10px solid white;
+        grid-column: 2/3 ;
+        height: 200px;
+        background-color: #EE2E84;
+                @media(max-width: 768px){
+                        grid-column: 1/5;
+                }
+}
+
+
+
+
+.box4{
+        border:10px solid white;
+        grid-column: 3/4 ;
+        height: 200px;
+        background-color: #EE2E84;
+                @media(max-width: 768px){
+                        grid-column: 1/5;
+                }
+}
+
+
+
+
+.box5{
+
+        border:10px solid white;
+        grid-column-end: 4/5;
+        height: 200px;
+        background-color: #EE2E84;
+                @media(max-width: 768px){
+                        grid-column: 1/5;
+                }
+}
+
+
+
+
+.box6{
+        border:10px solid white;
+        grid-column-start: span 2;
+        height: 200px;
+        background-color: #85CFD8;
+                @media(max-width: 768px){
+                        grid-column: 1/5;
+                }
+}
+
+
+
+
+.box7{
+        border:10px solid white;
+        grid-column: 3/5 ;
+        height: 200px;
+        background-color: #85CFD8;
+                @media(max-width: 768px){
+                        grid-column: 1/5;
+                }
+}
+
+
+
+
+.box8{
+        border:10px solid white;
+        grid-column-start: span 3 ;
+        height: 200px;
+        background-color: #8DC63F;
+                @media(max-width: 768px){
+                        grid-column: 1/5;
+                }
+}
+
+
+
+
+.box9{
+        border:10px solid white;
+        grid-column: 4/5;
+        height: 200px;
+        background-color:#E76E34;
+                @media(max-width: 768px){
+                        grid-column: 1/5;
+                }
+}
+
+
+
+

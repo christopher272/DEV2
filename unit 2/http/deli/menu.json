@@ -1,0 +1,68 @@
+{
+    "appetizers": [
+    {
+        "name":"spinach & arctichoke dip with bread" ,
+        "ingredients": ["cream cheese", "mayonnaise", "Parmesan cheese","salt",
+        "Romano cheese","garlic","basil","garlic salt","pepper","spinach",
+        "artichoke hearts","mozzarella cheese","your choice of bread"],
+        "description": "your choice of bread served with a creamy blend of spinach, artichoke hearts and three kinds of cheese"
+    },
+    {
+        "name": "hummus & peppers",
+        "ingredients": ["garbanzo beans", "tahini", "lemon juice", "garlic", "olive oil", "bell pepper strips"],
+        "description": "hummus served with sliced bell peppers" 
+    }
+    ],
+
+    "cold cuts": [
+    {
+        "name": "club sandwich",
+        "ingredients": ["sliced turkey or chicken","bacon","lettuce","tomatoes","mayonnaise","your choice of bread"],
+        "description": "The classic club is a triple-decker sandwich made up of three slices toasted white bread, deli-sliced turkey or chicken, bacon, lettuce, tomatoes, and mayonnaise."
+    },
+    {
+        "name": "egg salad sandwich",
+        "ingredients": ["hard boiled eggs", "mayonnaise", "celery", "mustard", "salt", "pepper","your choice of bread"],
+        "description": "egg salad served on your choice of bread"
+    }
+    ],
+
+    "warm cuts": [
+    {
+        "name": "grilled cheese sandwich",
+        "ingredients": [ "cheddar cheese", "swiss cheese", "butter","chipolte mayo", "your choice of bread"],
+        "description": "melted cheese between 2 slices of bread with tangy mayo" 
+    },
+    {
+        "name": "french dip sandwich",
+        "ingredients": [ "shaved ribeye steak", "provolone cheese", "au jus", "kaiser roll"],
+        "description": "baked cheese and steak sandwich on a kaiser roll with au jus for dipping" 
+    }
+    ],
+
+    "desserts": [
+    {
+        "name": "chocolate chip cookies",
+        "ingredients": ["all-purpose flour", "baking soda", "salt", "butter", "white sugar", "brown sugar", "egg", "vanilla extract", "semi-sweet chocolate chips", "milk chocolate chunks"],
+        "description": "gooey chewy cookies with a mixture of milk chocolate chunks and semi sweet chips" 
+    },
+    {
+        "name": "rice crispy treats",
+        "ingredients": ["toasted rice cereal","butter","marshmallows","chocolate sauce"],
+        "description": "toasted rice cereal mixed with marshmallows drizzled in chocolate sauce" 
+    }
+    ],
+
+    "drinks": [
+    {
+        "name": "raspberry lemonade",
+        "ingredients": ["fresh raspberries","lemon juice","water","sugar", "mint leaves"],
+        "description": "fresh lemonade with a hint of local raspberry flavor and mint garnish"
+    },
+    {
+        "name": "iced tea",
+        "ingredients":["water","black tea","caster sugar","honey","lemons"] ,
+        "description": "Sweetened iced tea made with black tea, sugar or honey and fresh lemon slices"
+    }
+    ]
+}
