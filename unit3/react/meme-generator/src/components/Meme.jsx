@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {useCallback} from 'react';
 import MemeTemplate from './MemeTemplate';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -59,13 +60,17 @@ export default function Meme() {
             setSavedMemes((prevMemes) => [...prevMemes, { ...meme }]);
         }
     };
-    const handleEdit = (id, update) => {
+    const handleEdit = useCallback((id, update) => {
         setSavedMemes(prevMemes => prevMemes.map(meme => meme.id !== id ? meme : update))
-    }
+    }, [])
 
     const handleDelete = (id) => {
         setSavedMemes(prevMemes => prevMemes.filter(meme => meme.id !== id))
     }
+
+    const handleEditSubmit = useCallback((id, update) => {
+        handleEdit(id, update);
+    }, [handleEdit]);
 
     return (
         <main>
@@ -113,6 +118,7 @@ export default function Meme() {
                             id={savedMemes.id}
                             handleEdit={handleEdit}
                             handleDelete={handleDelete}
+                            handleEditSubmit={handleEditSubmit}
                         />
                     )))}
 

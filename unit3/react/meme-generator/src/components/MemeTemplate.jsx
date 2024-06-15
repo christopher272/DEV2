@@ -1,10 +1,26 @@
 import React, { useState } from "react";
-
-function MemeTemplate({ topText, bottomText, randomImage, id, handleDelete, handleEdit }) {
+import { useCallback } from "react";
+function MemeTemplate({ topText, bottomText, randomImage, id, handleDelete, handleEdit, handleEditSubmit }) {
     const [editing, setEditing] = useState(false)
+    const [newTopText, setNewTopText] = useState("")
+    const [newBottomText, setNewBottomText] = useState("")
     function handleToggle() {
         setEditing(!editing)
     }
+
+    const handleFormSubmit = useCallback((event) => {
+        event.preventDefault();
+        const updatedMeme = {
+            topText: event.target.newTopText.value,
+            bottomText: event.target.newBottomText.value,
+            randomImage,
+            id
+        };
+        setEditing(false)
+        handleEditSubmit(id, updatedMeme)
+        console.log(updatedMeme)
+    }, [handleEditSubmit, id, randomImage]);
+
     return (
         <div className="meme">
             <div className="meme--container">
@@ -15,14 +31,18 @@ function MemeTemplate({ topText, bottomText, randomImage, id, handleDelete, hand
                 <button onClick={() => handleDelete(id)}>Delete</button>
             </div>
             {editing &&
-                <form className="editForm">
+                <form className="editForm" onSubmit={handleFormSubmit}>
                     <input type="text" 
+                    value = {newTopText}
                     placeholder={topText}
-                    name="newTopText"/>
+                    name="newTopText"
+                    onChange={(event) => setNewTopText(event.target.value)}/>
                     <input type="text"
                     placeholder={bottomText}
-                    name="newBottomText" />
-                    <button >Submit</button>
+                    name="newBottomText" 
+                    value = {newBottomText} 
+                    onChange={(event) => setNewBottomText(event.target.value)}/>
+                    <button type ="submit">Submit</button>
                 </form>}
         </div>
     );
